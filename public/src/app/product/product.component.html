@@ -1,0 +1,5 @@
+<img style = "width: 20%;" src="{{curProduct.imageUrl}}" alt="" class="circle">
+      <p><span class="title" style = 'color: black;'>{{curProduct.title}}</span></p>
+      <p style = 'color: black;'>{{curProduct.price}}</p>
+      <a [routerLink]="['/edit', curProduct._id]" class="waves-effect waves-light btn"><i class="material-icons left">edit</i>edit</a>
+      <a (click) = "deleteProduct(curProduct._id)" class="waves-effect waves-light btn"><i class="material-icons left">delete</i>delete</a>

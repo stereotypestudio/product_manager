@@ -1,0 +1,12 @@
+<p *ngIf = "errors">{{errors}}</p>
+<form (ngSubmit) = "addProduct()">
+	<p>{{curProduct.title | json}}</p>
+	Name:	<!-- <input type="text" name = "curProduct.title" [(ngModel)] = "curProduct.title"> -->
+	<input type="text" name="title" required minlength="4" maxlength="24"[(ngModel)]="curProduct.title" #email="ngModel"
+>
+	Price:<input type="text" name = "curProduct.price" [(ngModel)] = "curProduct.price">
+	Image URL:<input type="text" name = "curProduct.imageUrl" [(ngModel)] = "curProduct.imageUrl">
+	<button class = "waves-effect waves-teal btn-flat" type = "submit">Add Product</button>
+	<button class = "waves-effect waves-teal btn-flat" [routerLink]="['/']">Cancel</button>
+</form>
+

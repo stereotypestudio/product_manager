@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <div class="row">
+    <div class="col m12">
+      <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <a [routerLink]="['/']"><span class="card-title">Products Manager</span></a>
+            
+            <router-outlet></router-outlet>
+
+            <div class="card-action">
+              <a [routerLink]="['/new']">Create new product</a>
+              <a href="#">Product List</a>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>

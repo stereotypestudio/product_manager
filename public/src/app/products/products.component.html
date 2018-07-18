@@ -1,0 +1,9 @@
+
+	
+	
+	<div *ngFor="let product of allProducts" class="card-panel blue-grey lighten-5">
+		<app-product [curProduct] = "product" (deleted) = "onDelete($event)"></app-product>
+		<!-- <p style = "color: black;">{{product.title}}</p> -->
+	</div>
+
+
